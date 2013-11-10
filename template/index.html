@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>The Book Name - </title>
+  <title>template - </title>
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,21 +15,30 @@
 <body>
 <h1>Include Before</h1>
 
+<p>This text if from a file named include-before.html in the html-build directory.</p>
+
 <p>This file will be included before the body text from the chapters directory.</p>
 <nav id="TOC">
 <ul>
-<li><a href="#preface">Preface</a></li>
+<li><a href="#introduction">Introduction</a></li>
 <li><a href="#chapter-1">Chapter 1</a></li>
-<li><a href="#sample-chapter-2">Sample Chapter 2</a></li>
+<li><a href="#chapter-2">Chapter 2</a></li>
 </ul>
 </nav>
-<h1 id="preface"><a href="#preface">Preface</a></h1>
-<p>This text is from the file named 00-preface.md.</p>
+<h1 id="introduction"><a href="#introduction">Introduction</a></h1>
+<p>This text is from the file named 00-introduction.md.</p>
+<p>It could as easily be other forward matter such as a Preface or Prolog, or deleted if not required.</p>
 <h1 id="chapter-1"><a href="#chapter-1">Chapter 1</a></h1>
-<p>This is text from the first chapter or section file.</p>
-<h1 id="sample-chapter-2"><a href="#sample-chapter-2">Sample Chapter 2</a></h1>
-<p>This is text from the file containing the second chapter or section.</p>
+<p>This text is from the file named 01-chapter.md.</p>
+<p>The file should be renamed and the word “chapter” replaced with a more meaningful name.</p>
+<p>The “01” determines position and should only be changed if you want to change the placement of this chapter.</p>
+<h1 id="chapter-2"><a href="#chapter-2">Chapter 2</a></h1>
+<p>This text is from the file named 02-chapter.md.</p>
+<p>The file should be renamed and the word “chapter” replaced with a more meaningful name.</p>
+<p>The “01” determines position and should only be changed if you want to change the placement of this chapter.</p>
 <h1>Include After</h1>
+
+<p>This text if from a file named include-after.html in the html-build directory.</p>
 
 <p>This file will be included after the body text from the chapters directory.</p>
 </body>

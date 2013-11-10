@@ -1,8 +1,8 @@
 html_include_dir=html-build
 epub_include_dir=epub-build
 source=chapters/*.md
-title='The Book Name'
-filename='the-book-title'
+title='template'
+filename='template'
 
 
 all: html epub rtf pdf

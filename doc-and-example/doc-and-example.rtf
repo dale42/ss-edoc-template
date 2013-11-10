@@ -1,0 +1,39 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Acknowledgment\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 My thanks to the many people who have made work, notes, and articles available on the Internet.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 In particular, I would like to thank:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://addyosmani.com"}}{\fldrslt{\ul
+Addy Osmani
+}}}
+, author of {\field{\*\fldinst{HYPERLINK "http://addyosmani.github.io/backbone-fundamentals/"}}{\fldrslt{\ul
+Developing Backbone.js Applications
+}}}
+, for making his book production public on GitHub.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "http://johnmacfarlane.net/"}}{\fldrslt{\ul
+John MacFarlane
+}}}
+ for {\field{\*\fldinst{HYPERLINK "http://johnmacfarlane.net/pandoc/"}}{\fldrslt{\ul
+Pandoc
+}}}
+, his general markup converter.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Introduction\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This ebook serves as both an example and documentation on one method of using a utility named {\field{\*\fldinst{HYPERLINK "http://johnmacfarlane.net/pandoc/"}}{\fldrslt{\ul
+Pandoc
+}}}
+ to generate an ebook from source files written in markdown.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Overview\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 The Big Picture\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The overall file structure is not mandated by any of the tools used to build the formatted output. It exists to make the author\u8217's life easier by providing a logical organization for the individual files. The structure can be changed to meet different requirements or organizational tastes.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The sources files live in the chapters directory. For ease of authoring and content management the assumption is there is one chapter in each file, but this is a convention. A chapter could be broken into multiple files or multiple chapters placed in a single file. The files are concatinated in alphabetical order to produce a master document. To allow for useful file naming and maintain ordering, the file names are prefixed with numbers.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The formatted output (ePub, HTML, PDF, RTF) is produced by a utility named Pandoc. Pandoc is the heart of this method. It determines what is and is not valid input, and controls the details of what the output looks like.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Images are stored in a seperate image directory named img. Again, this is by convention and can be changed. An image is only used if it is referenced in an input file.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Files specific to a peticular format such as ePub or HMTL are placed in their own directories, epub-build or html-build, respectively.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The commands to create the output documents are contained within the file named Makefile. A command-line utility named make follows the commands. The output documents are placed in the same directory as the Makefile file.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Source File Format\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This method uses plain-text files for input. The formatting is specified using a markup syntax. The specific markup syntax is whatever Pandoc understands. At the time of writing this was Markdown and subsets of Textile, reStructuredText, HTML, LaTeX, MediaWiki markup, Haddock markup, OPML, and DocBook.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Output File Formats\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The example Makefile produces HTML, ePub, PDF, and RTF output files. There is also sample code for the Kindle mobi format.\par}
+}

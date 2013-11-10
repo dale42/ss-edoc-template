@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Single Source eDocs Documentation and Example - </title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="html-build/style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div style="text-align: center">
+  <h1>Single Source eDocs<br>Documentation<br>and<br>Example</h1>
+  <p><img src="img/tux-161439_150.png" alt="Tux holding eBook reader"/></p>
+</div>
+
+<h1>Table of Contents</h1>
+<nav id="TOC">
+<ul>
+<li><a href="#acknowledgment">Acknowledgment</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#overview">Overview</a><ul>
+<li><a href="#the-big-picture">The Big Picture</a></li>
+<li><a href="#source-file-format">Source File Format</a></li>
+<li><a href="#output-file-formats">Output File Formats</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="acknowledgment"><a href="#acknowledgment">Acknowledgment</a></h1>
+<p>My thanks to the many people who have made work, notes, and articles available on the Internet.</p>
+<p>In particular, I would like to thank:</p>
+<ul>
+<li><a href="http://addyosmani.com">Addy Osmani</a>, author of <a href="http://addyosmani.github.io/backbone-fundamentals/">Developing Backbone.js Applications</a>, for making his book production public on GitHub.</li>
+<li><a href="http://johnmacfarlane.net/">John MacFarlane</a> for <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>, his general markup converter.</li>
+</ul>
+<h1 id="introduction"><a href="#introduction">Introduction</a></h1>
+<p>This ebook serves as both an example and documentation on one method of using a utility named <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> to generate an ebook from source files written in markdown.</p>
+<h1 id="overview"><a href="#overview">Overview</a></h1>
+<h2 id="the-big-picture"><a href="#the-big-picture">The Big Picture</a></h2>
+<p>The overall file structure is not mandated by any of the tools used to build the formatted output. It exists to make the author’s life easier by providing a logical organization for the individual files. The structure can be changed to meet different requirements or organizational tastes.</p>
+<p>The sources files live in the chapters directory. For ease of authoring and content management the assumption is there is one chapter in each file, but this is a convention. A chapter could be broken into multiple files or multiple chapters placed in a single file. The files are concatinated in alphabetical order to produce a master document. To allow for useful file naming and maintain ordering, the file names are prefixed with numbers.</p>
+<p>The formatted output (ePub, HTML, PDF, RTF) is produced by a utility named Pandoc. Pandoc is the heart of this method. It determines what is and is not valid input, and controls the details of what the output looks like.</p>
+<p>Images are stored in a seperate image directory named img. Again, this is by convention and can be changed. An image is only used if it is referenced in an input file.</p>
+<p>Files specific to a peticular format such as ePub or HMTL are placed in their own directories, epub-build or html-build, respectively.</p>
+<p>The commands to create the output documents are contained within the file named Makefile. A command-line utility named make follows the commands. The output documents are placed in the same directory as the Makefile file.</p>
+<h2 id="source-file-format"><a href="#source-file-format">Source File Format</a></h2>
+<p>This method uses plain-text files for input. The formatting is specified using a markup syntax. The specific markup syntax is whatever Pandoc understands. At the time of writing this was Markdown and subsets of Textile, reStructuredText, HTML, LaTeX, MediaWiki markup, Haddock markup, OPML, and DocBook.</p>
+<h2 id="output-file-formats"><a href="#output-file-formats">Output File Formats</a></h2>
+<p>The example Makefile produces HTML, ePub, PDF, and RTF output files. There is also sample code for the Kindle mobi format.</p>
+<h1>Include After</h1>
+
+<p>TO DO: Come up with a good example for Include After option.</p>
+</body>
+</html>
